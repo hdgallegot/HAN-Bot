@@ -1,0 +1,5 @@
+//Comando en terminal para compilar un archivo con las librerias de OpenCV
+# g++ -ggdb `pkg-config --cflags opencv` cameracapture.cpp -o Camera `pkg-config --libs openc`
+
+$ g++ example.cpp -o example `pkg-config --cflags --libs opencv`
+
