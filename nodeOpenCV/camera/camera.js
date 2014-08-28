@@ -7,7 +7,7 @@ var camera = new cv.VideoCapture(0);
 //for local camera pc
 camera.setWidth(180);
 camera.setHeight(120);
-
+//add window
 var namedwindow = new cv.NamedWindow('Display');
 
 var lower_threshold = [0, 162, 217];
