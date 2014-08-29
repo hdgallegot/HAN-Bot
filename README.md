@@ -6,6 +6,7 @@ HAN-Bot
 #HARDWARE:
 
 HAN-Bot require the followings hardwares:
+
 -CHASIS POLOLU
 
 -BATTERY 12 V
