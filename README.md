@@ -37,6 +37,6 @@ Install wicd-curses (BeagleBone)
 
 Install NodeJS (Desktop PC and BeagleBone)
 
-Install bonescript (BoneScript)
+Install bonescript (NodeJS-BeagleBone)
 
 #SIMPLE CODES
