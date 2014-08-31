@@ -29,4 +29,14 @@ HAN-Bot require the followings hardwares:
 
 Robot project that implements node.js codes. For implements, it requires the followings steps:
 
+Install Debian on Beaglebone.
+
+Install OpenCV (Desktop pc and BeagleBone).
+
+Install wicd-curses
+
+Install NodeJS (Desktop PC and BeagleBone)
+
+Install bonescript
+
 #SIMPLE CODES

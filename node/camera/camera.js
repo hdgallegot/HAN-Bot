@@ -1,17 +1,17 @@
 var cv = require('opencv');
 
-var camera = new cv.VideoCapture(0);
+var camera = new cv.VideoCapture(1);
 //for logitech 920HD
-//camera.setWidth(160);
-//camera.setHeight(90);
+camera.setWidth(160);
+camera.setHeight(90);
 //for local camera pc
-camera.setWidth(180);
-camera.setHeight(120);
+//camera.setWidth(180);
+//camera.setHeight(120);
 //add window
 var namedwindow = new cv.NamedWindow('Display');
 
-var lower_threshold = [0, 162, 217];
-var upper_threshold = [140, 255, 255];
+var lower_threshold = [0,0,214];
+var upper_threshold = [168, 255, 255];
 var GREEN = [0, 255, 0]; //B, G, R
 var RED   = [0, 0, 255]; //B, G, R
 
@@ -37,12 +37,12 @@ setInterval(function() {
 	}
 
 //		im.save('cam.png');
-        namedwindow.show(im);
-        namedwindow.blockingWaitKey(0,1);
+//        namedwindow.show(im);
+//        namedwindow.blockingWaitKey(0,1);
 //        console.log('captured');
 	    console.log("x: " + cgx);
 //	    console.log("y: " + cgy);
 //	    console.log();
 	});
 
-}, 200);
+}, 150);
