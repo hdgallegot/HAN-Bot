@@ -33,7 +33,7 @@ Install Debian on Beaglebone.
 
 Install OpenCV (Desktop pc and BeagleBone).
 
-Install wicd-curses
+Install wicd-curses (BeagleBone)
 
 Install NodeJS (Desktop PC and BeagleBone)
 
