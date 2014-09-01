@@ -27,22 +27,24 @@ function operation(){
 
 switch (Number(process.argv[2])){
 	case 0:
-		moveForward(0);
-		break;
+        moveForward(0);
+        break;
 	case 1:
-		moveForward(Number(process.argv[3]));
-		break;
+        moveForward(Number(process.argv[3]));
+    	break;
 	case 2:
-		moveBack(Number(process.argv[3]));
-		break;
+    	moveBack(Number(process.argv[3]));
+    	break;
 	case 3:
-		moveUnclock(Number(process.argv[3]));
-		break;
+    	moveUnclock(Number(process.argv[3]));
+    	break;
 	case 4:
-		moveClock(Number(process.argv[3]));
-		break;
+    	moveClock(Number(process.argv[3]));
+    	break;
     case 5:
-        stepClock(Number(process.argv[3]), Number(process.argv[4]));
+        setInterval(
+            stepClock(Number(process.argv[3]), Number(process.argv[4]))
+        ,100);
         break;
 }
 
@@ -87,6 +89,7 @@ function moveUnclock(value){
 function stepClock(value,time){
     moveClock(value);
     sleep(time);
+    moveForward(0);
 }
 
 function sleep(millisecond){
