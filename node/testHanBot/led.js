@@ -1,5 +1,5 @@
 var b = require('bonescript');
-var led = "P8_12";
+var led = "P8_20";
 var state = 0;
 
 b.pinMode(led, 'out');
