@@ -41,6 +41,9 @@ switch (Number(process.argv[2])){
 	case 4:
 		moveClock(Number(process.argv[3]));
 		break;
+    case 5:
+        stepClock(Number(process.argv[3]), Number(process.argv[4]));
+        break;
 }
 
 //moveForward(Number(process.argv[2]));
@@ -79,6 +82,20 @@ function moveUnclock(value){
 	b.digitalWrite(in3, b.LOW);
 	b.digitalWrite(in4, b.HIGH);
 	b.analogWrite(enB, value);
+}
+
+function stepClock(value,time){
+    moveClock(value);
+    sleep(time);
+}
+
+function sleep(millisecond){
+    var currentTime = new Date().getTime();
+    console.log(currentTime);
+    while(currentTime + millisecond >= new Date().getTime()){
+        //do nothing
+    }
+    console.log(new Date().getTime());
 }
 
 function compareData(data){
